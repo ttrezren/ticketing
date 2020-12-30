@@ -4,7 +4,7 @@ const Function = ({ req }) => {
   if (typeof window === 'undefined') {
     //server
     return axios.create({
-      baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      baseURL: 'http://www.new-ticketing.xyz/',
       headers: req.headers
     })
   } else {
